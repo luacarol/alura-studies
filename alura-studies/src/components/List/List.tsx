@@ -18,7 +18,7 @@ function List() {
             <ul>
 
                 {tasks.map((item, index) => (
-                    <li>
+                    <li key={index}>
                         <h3>{item.task}</h3>
                         <span>{item.time}</span>
                     </li>
